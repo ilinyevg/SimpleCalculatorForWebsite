@@ -1,10 +1,4 @@
 <?php
-/*
-Template name: logistics-theme
-*/
-/**
- * The template for displaying all pages
- */
 get_header();
 global $cs_node, $cs_sidebarLayout, $cs_xmlObject, $cs_node_id, $column_attributes, $cs_paged_id,$page_element_size;
 ?>
