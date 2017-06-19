@@ -408,34 +408,11 @@ else
 		SEND ME ESTIMATE
 	</button></div>
 	
-
     </div>
 </div>
  
 	</form> 
 <div>
- <p style="text-align: center;margin-bottom:80px;margin-top:50px;     font-size: 20px;
-    line-height: normal;" >Financing Available. Please call <a href="tel:8447877888 ">(844) 787- 7888</a> to get details</p>
-
-<div class="merchandizer col-md-12">
-<div><h3 style="text-align: center">Our company offers a wide range of funding programs</h3></div>
-<div class="row">
-<div class="col-md-2" style="margin: 10px; width: 200px;">		
-<img width="150" src="/wp-content/uploads/2015/11/bank5.png" alt="">
-</div>
-<div class="col-md-2" style="margin: 10px; width: 200px;">
-<img width="150"  src="/wp-content/uploads/2015/11/bank4.png" alt="">
-</div>
-<div class="col-md-2" style="margin: 10px; width: 200px;">		
-<img width="150"  src="/wp-content/uploads/2015/11/bank2.png" alt="">
-</div>
-<div class="col-md-2" style="margin: 10px; width: 200px;">		
-<img width="150"  src="/wp-content/uploads/2015/11/bank1.png" alt="">
-</div>
-<div class="col-md-2" style="margin: 10px; width:  75px;">		
-<img width="50"  src="/wp-content/uploads/2015/11/bank3.png" alt="">
-</div></div>
- </div>
          </div>    
     </div>
     </div>
