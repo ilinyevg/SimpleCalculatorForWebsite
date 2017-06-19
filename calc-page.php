@@ -69,7 +69,7 @@ function contact_send_message($equals) {
 
     $header = "MIME-Version: 1.0\n";
     $header .= "Content-Type: text/html; charset=utf-8\n";
-    $header .= "From: ei@academproject.com";
+    $header .= "From: name@email.com";
 
     $message = "<p>Dear $name,</p>
 <p>We appreciate that you have used the calculator on <a href='http://.com/'>our website</a>. You can see a rough estimate of the cost of your new windows below.</p>";
@@ -86,11 +86,11 @@ $message .= getItemDetails('window5');
 $message .= getItemDetails('window6');  
 $message .= getItemDetails('door'); 	 
     $message .= "</ul><h4>Estimate price: $<b>$equals</b>.00</h4><img src='http://yourwebsite.com/wp-content/uploads/2015/11/header-logo-e1447361745152.png' alt='Smart Energy Solutions'>
-<p>Our manager will contact you soon.</p> <p>Best regards,</p><p>Team of Smart Energy Solutions</p><p>Our contact phone: <b>(844) 787- 7888</b></p>"; 
+<p>Our manager will contact you soon.</p> <p>Best regards,</p><p>Company name</p><p>Our contact phone: <b>(844) 9999999</b></p>"; 
 
-    $subject = "Window Estimates from Smart Energy Solutions";
+    $subject = "Window Estimates";
    
-    $to = "ei@russianamericanmedia.com";
+    $to = "name@email.com";
 
     if( !wp_mail($to, $subject, $message, $header) ) {
         $contact_errors = true;
