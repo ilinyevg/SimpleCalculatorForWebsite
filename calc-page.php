@@ -17,52 +17,6 @@ alert(e.message);
 </script>
 
 <style>
-.windowselection {
-width:220px;  
-}
-
-.doorselection {
-width:250px;  
-}
-
-.calc-element {
-margin:5px;
-}
-
-.dd {
-border: 1px solid #d3e5eb; 
-    box-shadow: 0 0 5px 0 #f2f2f2;
-border-radius: 0px;
-}
-.lbl {
-padding:5px; 
-display: inline-block;
-    color: #191919;
-    font-size: 14px;
-    font-weight: normal;
-}
-
-.num-element, input[type=number] {
-border: 1px solid #d3e5eb; 
-width:50px;
-    box-shadow: 0 0 5px 0 #f2f2f2;
-    font-size: 12px;
-    font-style: italic;
-    padding: 5px;
-    margin-bottom: 5px; 
-}
-
-.textinput, input[type=text], input[type=email], input[type=tel] {
-border: 1px solid #d3e5eb;
-    height: 44px;
-    box-shadow: 0 0 5px 0 #f2f2f2;
-    font-size: 12px;
-    font-style: italic;
-    padding: 10px;
-    margin-bottom: 10px;
-margin-right:10px;
-}
-
 .left {
     float: left;
     width: 60%;
@@ -210,16 +164,16 @@ if($_POST)
 			$equals = $equals + $door * 30;
 			
 			$sendresult = contact_send_message($equals);
-			$message = "<p style='font-weight: bold; font-size: 16px; background-color: #B2E8AC; color: #295029; border: solid 1px #235F30; padding: 15px;'> Price was successfully calculated. Please check your e-mail. Our manager will contact you within 24 hours.  </p>" ;
+			$message = "<p style='color: #295029; '> Price was successfully calculated. Please check your e-mail. Our manager will contact you within 24 hours.  </p>" ;
 		}
 		else
 		{
-			$message = "<p style='font-weight: bold; font-size: 16px; background-color: #F98D7A; color: #8A0303; border: solid 1px #8A0303; padding: 15px;'> Your window sizes are unique. Please contact us for pricing details. Phone: (844) 787- 7888. Anyway, our manager will contact you within 24 hours.</p>";
+			$message = "<p style='color: #8A0303; '> Your window sizes are unique. Please contact us for pricing details. Phone: (844) 787- 7888. Anyway, our manager will contact you within 24 hours.</p>";
 		}
 	}
 	else
 	{
-		$message = "<p style='font-weight: bold; font-size: 16px; background-color: #F98D7A; color: #8A0303; border: solid 1px #8A0303; padding: 15px;'> Your window sizes are unique. Please contact us for pricing details. Phone: (844) 787- 7888. Anyway, our manager will contact you within 24 hours. </p>";
+		$message = "<p style='color: #8A0303;'> Your window sizes are unique. Please contact us for pricing details. Phone: (844) 787- 7888. Anyway, our manager will contact you within 24 hours. </p>";
 		$equals = 0;
 	} 
 }
@@ -383,22 +337,15 @@ else
 		GET PRICE!
 	</h3>
 <div class="calc-element">
-<label class="lbl" style="width: 100px;">Your name:</label><input class="textinput" name="yourname" style="width:200px;"  type="text" required />  
+<label class="lbl" style="width: 100px;">Your name:</label><input class="textinput" name="yourname" type="text" required />  
 </div>
 <div class="calc-element">
-<label class="lbl" style="width: 100px;">Your phone:</label><input class="textinput" name="phone" style="width:200px;"  type="tel" required  />  
+<label class="lbl" style="width: 100px;">Your phone:</label><input class="textinput" name="phone" type="tel" required  />  
 </div>
 <div class="calc-element">
-<label class="lbl" style="width: 100px;">Your email:</label><input class="textinput" type="email" name="youremail" style="width:200px;" required/>  
-</div> <div style="margin-left: 105px;
-    text-align: center;
-    width: 200px;">
-	<button type="submit" class="quick-btn cs-bgcolor" style="padding: 15px;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    font-weight: 800;
-    font-size: 16px; margin:10px;">
+<label class="lbl" >Your email:</label><input class="textinput" type="email" name="youremail" required/>  
+</div> <div>
+	<button type="submit" class="quick-btn cs-bgcolor">
 		SEND ME ESTIMATE
 	</button></div>
 	
